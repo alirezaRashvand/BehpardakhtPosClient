@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/BehpardakhtPosClient.Examples/BehpardakhtPosClient.Examples.csproj" />
+    <Project Path="tests/BehpardakhtPosClient.Tests/BehpardakhtPosClient.Tests.csproj" />
+  </Folder>
+  <Project Path="BehpardakhtPosClient.csproj" />
+</Solution>

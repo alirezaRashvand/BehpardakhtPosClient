@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net10.0;net11.0</TargetFrameworks>
+    <RootNamespace>BehpardakhtPosClient</RootNamespace>
+    <AssemblyName>BehpardakhtPosClient</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <PackageId>BehpardakhtPosClient</PackageId>
+    <Version>0.0.1</Version>
+    <IsPackable>true</IsPackable>
+    <Authors>alirezar</Authors>
+    <Description>Unofficial Behpardakht POS-PC client for .NET. Speaks protocol revision 4.7 over TCP and serial, and the POS_PC.dll 1.4.47 frame.</Description>
+    <PackageTags>behpardakht;behpardakht-mellat;mellat;mellat-pos;pos;mellat-pos;pos-pc;</PackageTags>
+    <RepositoryUrl>https://github.com/alirezaRashvand/BehpardakhtPosClient</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/alirezaRashvand/BehpardakhtPosClient</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <DefaultItemExcludes>$(DefaultItemExcludes);tests/**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="System.IO.Ports" Version="10.0.15" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
+    <PackageReference Include="System.IO.Ports" Version="11.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net11.0'">
+    <PackageReference Include="System.IO.Ports" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="BehpardakhtPosClient.Tests" />
+  </ItemGroup>
+
+</Project>
