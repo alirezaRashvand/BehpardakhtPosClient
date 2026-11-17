@@ -1,6 +1,6 @@
 # BehpardakhtPosClient (Unofficial)
 
-Unofficial .NET client for a Behpardakht Mellat POS-PC terminal. It is not published or supported by Behpardakht. Amounts are Iranian rials. One `PosClient` talks to one terminal and runs one call at a time.
+Unofficial .NET client for a Behpardakht Mellat POS devices terminal. It is not published or supported by Behpardakht. Amounts are Iranian rials. One `PosClient` talks to one terminal and runs one call at a time.
 
 ## Documents
 
@@ -20,7 +20,7 @@ dotnet pack BehpardakhtPosClient.csproj -c Release -o ./nupkgs
 dotnet add package BehpardakhtPosClient --source ./nupkgs
 ```
 
-from Nuget:
+from [Nuget](https://www.nuget.org/packages/BehpardakhtPosClient):
 
 ```bash
 dotnet add package BehpardakhtPosClient

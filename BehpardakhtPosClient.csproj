@@ -13,7 +13,7 @@
     <Version>0.0.1</Version>
     <IsPackable>true</IsPackable>
     <Authors>alirezar</Authors>
-    <Description>Unofficial Behpardakht POS-PC client for .NET. Speaks protocol revision 4.7 over TCP and serial, and the POS_PC.dll 1.4.47 frame.</Description>
+    <Description>Unofficial Behpardakht POS device client for .NET. Speaks protocol revision 4.7 over TCP and serial, and the POS_PC.dll 1.4.47 frame.</Description>
     <PackageTags>behpardakht;behpardakht-mellat;mellat;mellat-pos;pos;mellat-pos;pos-pc;</PackageTags>
     <RepositoryUrl>https://github.com/alirezaRashvand/BehpardakhtPosClient</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
